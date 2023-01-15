@@ -2,10 +2,11 @@
 
 def isPrime(n):
     test = True
-    if n == 1:
-        test = False
+    if n == 1: test = False
+        
     for i in range(2, n):
         if n % i == 0: test = False
+    
     return test
 
 while True:
