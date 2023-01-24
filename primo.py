@@ -2,19 +2,21 @@
 
 def isPrime(n):
     test = True
-    if n == 1: test = False
+    if n == 1:
+        test = False
         
     for i in range(2, n):
-        if n % i == 0: test = False
+        if n % i == 0:
+            test = False
     
     return test
 
 while True:
-    print("Por favor, digite um número inteiro positivo: ")
-    n = int(input())
+    n = input('Por favor, digite um número inteiro positivo: ')
+    n = int(n)
     if n > 0: break
 
 if isPrime(n):
-    print("O número", n, "é primo.")
+    print(f'O número {n} é primo.')
 else:
-    print("O número", n, "não é primo.")
+    print(f'O número {n} não é primo.')
